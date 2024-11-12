@@ -18,13 +18,13 @@ return new class extends Migration
             $table->unsignedBigInteger('id_corrida');
             $table->integer('num_asientos');
             $table->date('fecha_compra');
-            $table->decimal('monto');
-            $table->decimal('descuento');
-            $table->integer('id_pago');
+            $table->decimal('monto', 8, 2);
+            $table->decimal('descuento', 8, 2);
+            $table->unsignedInteger('id_pago');
             $table->enum('estado', ['activo', 'cancelado']);
             $table->timestamps();
 
-            $table->foreign('id_usuario')->references('id')->on('usuario')->onDelete('cascade');
+            $table->foreign('id_usuario')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('id_corrida')->references('id')->on('corrida')->onDelete('cascade');
         });
     }

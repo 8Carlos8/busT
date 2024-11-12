@@ -21,7 +21,7 @@ return new class extends Migration
             $table->timestamps();
 
             $table->foreign('id_boleto')->references('id')->on('boleto')->onDelete('cascade');
-            $table->foreign('id_incidencia')->references('id')->on('incidente')->onDelete('cascade');
+            $table->foreign('id_incidente')->references('id')->on('incidente')->onDelete('cascade');
         });
     }
 
