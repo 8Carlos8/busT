@@ -46,7 +46,46 @@
       <div class="overlay" data-nav-toggler data-overlay></div>
     </div>
   </header>
+  <div class="caja" id="contacto">
+        <div class="box-info">
+            <h1>CONTÁCTO</h1>
+          
+            <div class="data">
+                <p><i class="fa-solid fa-envelope"></i>CORREO</p>
+                <p><i class="fa-solid fa-location-dot"></i>DIRECCIONES</p>
+            </div>
+            <div class="links">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        
+            </div>
+        </div>
+        <form action="https://formsubmit.co/creacode0@gmail.com" method="POST">
+            <div class="input-box">
+                <input type="text" id="name"class="name" placeholder="Nombre" required>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-box">
+              <input type="text" id="mail"class="mail"required placeholder="Correo">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="input-box">
+              <input type="text" id="phone"class="phone"placeholder="Celular">
+                <i class="fa-solid fa-pen-to-square"></i>
+            </div>
+            <div class="input-box">
+              <textarea name="message" class="message" placeholder="Escribe tu mensaje..."></textarea>
+            </div>
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </div>
 
+
+        <section class="mapa" id="ubicacion">
+          <iframe src=""></iframe>
+   
+
+      </section>
     
 </body>
 </html>
